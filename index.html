@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Loan Payment Calculator</title>
+    <link type="text/css" rel="stylesheet" href="Stylesheets/AutoLoan.css"/>
+    <script type="text/javascript" src="Scripts/AutoLoan.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Auto Loan Calculator</h1>
+        </div>
+        <div id="content">
+            <form id="form-loan-payment" action="#">
+                <div id="form-loan-payment-loanPeriod">
+                    <label>Loan Period (months) <input type="text" id="loanPeriod"></label>
+                </div>
+                <div class="space"></div>
+                <div id="form-loan-payment-annualInterestRate">
+                    <label>Annual Interest Rate (percentage) <input type="text" id="annualInterestRate"></label>
+                </div>
+                <div class="space"></div>
+                <div id="form-loan-payment-principal">
+                    <label>Principal or Amount Borrowed <input type="text" id="principal"></label>
+                </div>
+                <div class="space"></div>
+                <div id="form-loan-payment-calculate">
+                    <button id="clear" onclick="clearFields()"><strong>Clear</strong></button>
+                    <button id="calculate" onclick="calculateLoanPaymentAndInterest()"><strong>Calculate</strong></button>
+                </div>
+                <div class="space"></div>
+                <div id="form-loan-payment-monthlyPayment">
+                    <label>Monthly Payment: $ <input type="text" id="monthlyPayment"></label>
+                </div>
+                <div class="space"></div>
+                <div id="form-loan-payment-interestPaid">
+                    <label>Total Interest Paid: $ <input type="text" id="interestPaid"></label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
